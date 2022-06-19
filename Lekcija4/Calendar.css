@@ -1,0 +1,52 @@
+#container1 {
+    float: left;
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    width: 1530px;
+    height: 1795px;
+    background: rgba(42, 46, 65, 0.7);
+    border: 1px solid blue;
+    color: black;
+}
+
+#container1 div.date {
+    color: black;
+    position: absolute;
+    width: 140px;
+    height: 400px;
+    border: 1px solid blue;
+}
+
+#container1 .time {
+    color: black;
+    position: absolute;
+    width: 240px;
+    height: 1000px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.date {
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 67px;
+    height: 31px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    color: black;
+}
+
+.small {
+    float: lright;
+    position: absolute;
+    display: block;
+    width: 800px;
+    height: 1795px;
+    background: white;
+    border: 1px solid blue;
+}

@@ -1,0 +1,16 @@
+{
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "workbench.activityBar.iconClickBehavior": "toggle",
+    "workbench.quickOpen.preserveInput": true,
+    "workbench.editor.autoLockGroups": {
+        "default": true,
+        "workbench.editorinputs.searchEditorInput": true,
+        "imagePreview.previewEditor": true,
+        "mainThreadWebview-markdown.preview": true
+    },
+    "git.allowForcePush": true,
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "javascript.inlayHints.parameterTypes.enabled": true,
+    "javascript.referencesCodeLens.enabled": true,
+    "javascript.inlayHints.variableTypes.enabled": true
+}
