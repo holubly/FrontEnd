@@ -1,52 +1,138 @@
-#container1 {
-    float: left;
-    box-sizing: border-box;
-    position: absolute;
-    display: block;
-    width: 1530px;
-    height: 1795px;
-    background: rgba(42, 46, 65, 0.7);
-    border: 1px solid blue;
-    color: black;
-}
-
-#container1 div.date {
-    color: black;
-    position: absolute;
-    width: 140px;
-    height: 400px;
-    border: 1px solid blue;
-}
-
-#container1 .time {
-    color: black;
-    position: absolute;
-    width: 240px;
-    height: 1000px;
+body {
+    margin=0;
     display: flex;
-    align-items: flex-end;
+    box-sizing: border-box;
 }
 
-.date {
-    position: absolute;
-    flex-direction: column;
+.main {
+    flex: 1535 0 0;
+
+    grid-area: main;
+}
+
+.aside {
+    flex: 802 0 0;
+    padding: 0 4.27% 0;
+    /*4.27 это отступ от края. На картинке отступ=99px. 
+    Измеряется как % от родительского контейнера -это
+    body. 99px/(1535px+802px)  */
+    background: rgba(42, 46, 65, 0.7);
+}
+
+.calendar_header {
+    display: flex;
     justify-content: space-between;
-    width: 67px;
-    height: 31px;
-    font-family: Roboto;
+    padding: 14.0233% 0;
+
+    position: relative;
+}
+
+.calendar_btn {
+    flex: 0 0 18px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+
+    cursor: pointer;
+
+    color: white;
+}
+
+.calendar_btn:hover {
+    color: yellowgreen;
+}
+
+.calendar_btn_img {
+    width=50%;
+    aspect-ratio: 1/2;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.calendar_btn_img--reverse {
+    transform: rotate(180deg);
+    /*Команда повернула рисунок кнопки на 180 град*/
+}
+
+.calendar_title {
     font-style: normal;
     font-weight: 500;
-    font-size: 26px;
-    line-height: 30px;
-    color: black;
+    font-size: 36px;
+    line-height: 42px;
+    /*Размеры в пекселях взяты из макета в Фигме*/
+    text-align: center;
+
+    color: #FFFFFF;
 }
 
-.small {
-    float: lright;
+.calendar_header::after {
+    content: '';
+    /*Content'' это пустая строка. Тут нужна
+    тк на макете был декорный разделитель*/
     position: absolute;
+
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 2px solid rgba(0, 0, 0, 0.17);
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.17);
+    mix-blend-mode: normal;
+}
+
+.daysweek {
+    margin: 20px 0 0;
+}
+
+.daysweek_name {
+    display: flex;
+    list-style: none;
+    /*List-style отвечает за маркеры в списке. Мы поставили Нет - убрать все маркеры из списков*/
+    margin: 0;
+    padding: 0;
+}
+
+.daysweek_name {
+    flex-basis: 14%;
+    /*7 это количество элементов, которое нужно уместить в строку. Из 1/7 вывели процент*/
+    flex-grow: 1;
+    /*Элементы в блоке будут расти на одинаковое количество частей*/
+
+    font-weight: 500px;
+    font-size: 26px;
+    line-height: 44px;
+    text-align: center;
+    color: white;
+    mix-blend-mode: normal;
+    /*это наложение цветов*/
+    opacity: 0.6;
+}
+
+.daysweek_number {
+    display: flex;
+    list-style: none;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-basis: 14%;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    /*сделает перенос элементов на другие строки*/
+
+    margin: 0;
+    padding: 0;
+    min-height: 130px;
+    /*Сделали высоту строки*/
+}
+
+.daysweek_number a {
+    /*Делаем */
     display: block;
-    width: 800px;
-    height: 1795px;
-    background: white;
-    border: 1px solid blue;
+    /*Приведет к тому что все цифры в календаре будут в своих блочках*/
+    margin: 0 2px;
 }
