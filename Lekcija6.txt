@@ -1,0 +1,65 @@
+/? Задача Even Odd 
+//? УСПІШНО
+https://www.codewars.com/kata/reviews/5425fedf430ca265ea00033e/groups/542812196f30afb6bf0008df 
+
+//? Return Negative УСПІШНО
+function makeNegative(num) {
+ if (num < 0) {
+   return num; }
+     else {
+       return -num;
+   }
+ }
+ 
+//? Задача Jenny’s secret message 
+//? УСПІШНО
+ function greet(name){
+  if (name === "Johnny") {
+    return "Hello, my love!";}
+  else {
+  return "Hello, " + name + "!";}
+}
+
+//? Задача Opposites Attract 
+//? УСПІШНО
+function lovefunc(flower1, flower2){
+  if ((flower1 + flower2) % 2) {
+    return true; }
+      else {
+    return false; }
+}
+
+//? Задача Convert boolean values to strings ‘Yes’ or ‘No’. 
+//? НЕ УСПІШНО
+function boolToWord(bool){
+  if (bool="Yes") {
+    return true;
+  }
+  else {
+    return false;}
+}
+
+//? Задача Transportation on vacation 
+//? НЕ УСПІШНО
+function rentalCarCost(d) {
+  let cost = d * 40;
+  if (d>=7) {
+    cost -= 50;
+  } else if (d>=3){
+cost -= 20;    
+  } return cost
+}
+
+//? Задача Basic Mathematical Operations
+//? УСПІШНО
+function basicOp(operation, value1, value2) {
+  if (operation === '+') {
+      return value1 + value2;}
+    else if (operation === '-'){
+      return value1 - value2;
+    } else if (operation === '*'){
+      return value1 * value2;
+    } else if (operation === '/'){
+      return value1 / value2;
+  }
+}
