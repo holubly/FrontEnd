@@ -1,1 +1,3 @@
-https://github.com/holubly/Frontend/blob/81de8c514929a9f79755fcc57adf8e20593b66ad/Lekcija19/Message.js
+ДЗ - Повідомлення https://github.com/holubly/Frontend/blob/81de8c514929a9f79755fcc57adf8e20593b66ad/Lekcija19/Message.js
+Задача this https://www.codewars.com/kata/reviews/547c7202c5b2b38db100009a/groups/547c9495ec2cf1c08d000d06
+Задача автобус - вирішували на практичному занятті
