@@ -24,3 +24,26 @@ myName.join('');
 console.log(myName.join(''));
 console.log(husbandName.join(''));
 
+//Рандомні числа
+let phrases = [
+    'That sound good!',
+    'Yes, you should definitely do that!',
+    'I am not sure that is a good idea',
+    'Maybe not today?',
+    'Computer says No!'
+];
+phrases[Math.floor(Math.random() * 4)];
+console.log(Math.floor(Math.random() * 4));
+
+//Генератор випадкових чисел
+let randomBodyParts = ['Рот', 'Нос', 'Клюв'];
+let randomAdjectives = ['Вонючий', 'Скучный', 'Глупый'];
+let randomWords = ['МухаСкунс', 'Бегемот', 'Слон', 'MonkeyВолк', 'Крот'];
+
+randomBodyParts = randomBodyParts[Math.floor(Math.random) * 3];
+randomAdjectives = randomAdjectives[Math.floor(Math.random) * 3];
+randomWords = randomWords[Math.floor(Math.random) * 5];
+
+let randomInsult = 'Your ' + randomBodyParts + ' is like a ' + randomAdjectives + ' ' + randomWords + '!!!';
+
+console.log(randomInsult);

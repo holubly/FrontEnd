@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cross</title>
-    <link rel="stylesheet" href="cross.css">
-    <script src="board.js" defer></script>
+    <link rel="stylesheet" href="XO.css">
+    <script src="XO.js" defer></script>
 </head>
 
 <body>
     <form class="actions">
         <select name="robotName">
-            <option value="human">Играть с человеком</option>
-            <option selected value="X">Компьютер играет крестиками</option>
-            <option value="O">Компьютер играет ноликами</option>
-            <option value="computer">Компьютер играет сам</option>
+            <option value="human">Гра з другом</option>
+            <option selected value="X">Компьютер грає крестиками</option>
+            <option value="O">Компьютер грає нуликами</option>
+            <option value="computer">Компьютер грає сам</option>
         </select>
         <button type="submit" class="action action--start">
-            Начать заново
+            Почати знову
         </button>
     </form>
     <div class="game cross">
