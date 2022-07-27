@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    /*В body как правило всегда присутствует строка margin: 0;*/
+}
+
+.header {
+    width: 100%;
+    /* % будут расчитываьбся от ширины родительского блока*/
+    max-width: 1328%;
+
+    margin: 0 auto 0;
+    padding: 20px 24px;
+    /*Формируем отсутпы от края*/
+
+    box-sizing: border-box;
+    /*Убираем отсутпы внутри контейнера с текстом*/
+
+    display: flex;
+    /*Растягиеваем элементы по главной оси блока*/
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+:root {
+    /*Устанавливаем общий размер шрифта для всей страницы при помощи псевдокласса Рут*/
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.header_logo {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 120px;
+    /*размер логотипа идет из макета. Под логотип выделено 120рх*/
+}
+
+.header_logo a:hover {
+    color: aliceblue;
+}
+
+.header_logo_img {
+    width: 100%;
+    aspect-ratio: 120/24;
+    /*Задаем размер отсупов логотипа чтобы избежать прыгания тектса на странице вдальнейшем*/
+    margin-right: 12px;
+}
+
+.header_nav {
+    /*margin-left: auto;*/
+    flex-grow: 1;
+}
+
+.header_nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: flex-end;
+    /*gap: 40px;*/
+    /*Отступы между элементами списка*/
+
+}
+
+.header_nav-list-li {
+    margin: 20px;
+}
+
+.header_nav-list a {
+    text-decoration: none;
+    /*font-size: 0.7rem;*/
+    line-height: 1.357rem;
+    color: blue;
+    /*По моему макету бцквы Белого цвета*/
+
+    transition: color .6s linear 0s;
+    /*Простейший способ задавания анимации*/
+}
+
+.header_nav-list a:hover {
+    color: red;
+}
+
+.header_nav-list a:focus {
+    outline: 1px solid red;
+    /*Оконтовка вокруг каждового Ли списка будет красного цвета при наведении мышкой*/
+}

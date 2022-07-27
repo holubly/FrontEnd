@@ -47,3 +47,13 @@ randomWords = randomWords[Math.floor(Math.random) * 5];
 let randomInsult = 'Your ' + randomBodyParts + ' is like a ' + randomAdjectives + ' ' + randomWords + '!!!';
 
 console.log(randomInsult);
+
+//Прийняття ришень
+let phras = [
+    'That sounds good',
+    'Yes, you should definetly do that',
+    'I am not sure that is a great idea',
+    'Maybe not today',
+    'Computer says no!'
+]
+console.log(phras[Math.floor(Math.random) * 5]);

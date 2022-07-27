@@ -1,0 +1,13 @@
+.circle {
+    --transformTime: 1s;
+    width: 200px;
+    height: 200px;
+    color: blueviolet;
+    /*background: blueviolet;*/
+    border-radius: 50%;
+    transition: transform var(--transformTime) linear;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
