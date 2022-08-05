@@ -3,8 +3,12 @@
     width: 200px;
     height: 200px;
     color: blueviolet;
-    /*background: blueviolet;*/
+    background: blueviolet;
     border-radius: 50%;
+
+    /*margin: 0;*/
+    /*padding: 0;*/
+
     transition: transform var(--transformTime) linear;
 
     position: fixed;

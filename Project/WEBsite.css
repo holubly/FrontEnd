@@ -75,7 +75,7 @@ body {
     text-decoration: none;
     /*font-size: 0.7rem;*/
     line-height: 1.357rem;
-    color: blue;
+    color: white;
     /*По моему макету бцквы Белого цвета*/
 
     transition: color .6s linear 0s;
@@ -89,4 +89,110 @@ body {
 .header_nav-list a:focus {
     outline: 1px solid red;
     /*Оконтовка вокруг каждового Ли списка будет красного цвета при наведении мышкой*/
+}
+
+@media (max-width: 700px) {
+    body {
+        background: #00FFEA;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .ground_all {
+        flex-direction: column;
+        aspect-ratio: auto;
+    }
+
+    .ground_text {
+        min-width: none;
+        margin-top: 24px;
+        order: 1;
+        color: aqua;
+    }
+}
+
+@media screen and (max-width: 480px) {}
+
+.ground_all {
+    width: 100%;
+    /*sizes="(max-width: 900px) 100vw, (max-width: 1500) 50vw, 30vw";*/
+    margin: 0 auto 0;
+    display: flex;
+
+}
+
+.ground_text {
+    display: 512 0 0;
+    padding: 74px 24px 64px;
+
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+
+    line-height: 1.272727;
+    font-size: 1.80rem;
+
+    color: aqua;
+}
+
+.ground_img {
+    display: flex;
+}
+
+.ground_btn {
+    padding: 0 12.5% 0;
+    margin-top: 28px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ground_btn {
+    flex: 0 0 auto;
+    padding: 150px 16px 12px;
+    min-width: 168px;
+    text-decoration: none;
+
+    font-size: 16px;
+    line-height: 21px;
+    color: white;
+}
+
+.ground_btn:hover {
+    color: red;
+}
+
+body {
+    background: url(./IMG/Systems.jpg);
+    background-size: 100%;
+}
+
+.ground_XO_btnn {
+    padding: 0 12.5% 0;
+    margin-top: 28px;
+}
+
+.ground_XO_btnn {
+    /*flex: 0 0 auto;*/
+    color: white;
+    /*цвет текста*/
+
+}
+
+.ground_XO_btnn {
+    padding: 15px 40px;
+    background: rgb(213, 47, 255);
+    border-radius: 10px;
+    /*закругление кнопки*/
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.ground_XO_btnn:hover {
+    color: blue;
+}
+
+.ground_XO {
+    margin-left: 30px;
 }

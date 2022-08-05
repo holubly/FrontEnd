@@ -1,3 +1,8 @@
 https://github.com/holubly/Frontend/blob/master/Lekcija20/Circle.html
 https://github.com/holubly/Frontend/blob/master/Lekcija20/Cirle.css
 https://github.com/holubly/Frontend/blob/master/Lekcija20/Circle.js
+
+Настюню, от і настав апогей мого програмування - малювала Круг, а вийшов Квадрат. Може це із-за методу Canvas. 
+Але по іншому в мене нічого на екрані не відображається.
+
+І не можу зрозуміти чому Квадрат не рухається, я робила так само як и Борис
