@@ -1,3 +1,4 @@
 document.querySelector("#submit").onclick = function () {
-    alert("Press button");
+    alert("Try! You are a potential winner!");
+    window.location.href = "./ProjectXO.html";
 }

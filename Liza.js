@@ -57,3 +57,10 @@ let phras = [
     'Computer says no!'
 ]
 console.log(phras[Math.floor(Math.random) * 5]);
+
+//Створюємо обєкти
+let Cat = {
+    legs: 3,
+    name: "Harmony",
+    color: "Gray"
+}
