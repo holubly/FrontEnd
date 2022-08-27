@@ -8,7 +8,6 @@
 
     <link https://fonts.google.com/specimen/Roboto?query=<roboto rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="WEBsite.css">
-    <script src="WEBsite.js"></script 
     <title></title>
 </head>
 
@@ -24,8 +23,13 @@
                     <li class="header_nav-list-li">
                         <a href="#">ABOUT</a>
                     </li>
-                    <li class="header_nav-list-li">
-                        <a href="#">SERVISES</a>
+                    <li class="header_nav-list-li dropdown">
+                        <a clsass="services dropbtn" href="#">SERVISES</a>
+                        <div class="services-content dropdown-content">
+                            <a href="#">Consult & Design</a>
+                            <a href="#">Optimaze</a>
+                            <a href="#">Operate</a>
+                        </div>
                     </li>
                     <li class="header_nav-list-li">
                         <a href="#">BLOG</a>
@@ -41,23 +45,25 @@
         </a>
     </header>
 
-<div class="ground_all">
-    <div>
-        <div class="ground_text">We can help you reimagine your business through a digital lens</div>
-         <div class="ground_img">
-            <img alt="" srcset="./IMG/Systems.jpg 2000w,
-            ./IMG/Systems.jpg 1920w,
-            ./IMG/Systems.jpg 1700w,
-            ./IMG/Systems.jpg 1000w,
-            ./IMG/Systems.jpg 500w">
+    <div class="ground_all">
+        <div>
+            <div class="ground_text">We can help you reimagine your business through a digital lens.
+                By fusingconsulting talent with engineering expertise, we’re able to integrate vision and execution so
+                you can quickly move from strategy to reality.</div>
+            <div class="ground_img"></div>
+            <div class="ground_XO">
+                <button class="ground_XO_btnn" id="submit" onclick="alerted()"
+                    href="http://127.0.0.1:5500/Project/ProjectXO.html">GAME</button>
+            </div>
+            <div class="all-relativ">
+                <div class="ground_btn">
+                    <a class="ground_btn ground_btn_consult" href="#">CONSULT</a>
+                    <a class="ground_btn ground_btn_design" href="#">DESIGN</a>
+                    <a class="ground_btn ground_btn_engeneer" href="#">ENGENEER</a>
+                </div>
+            </div>
         </div>
-        <div class="ground_btn">
-            <a class="ground_btn ground_btn_consult" href="#">CONSULT</a>
-            <a class="ground_btn ground_btn_design" href="#">DESIGN</a>
-            <a class="ground_btn ground_btn_engeneer" href="#">ENGENEER</a>
-        </div>
-    </div>
-</div>
+        <script src="WEBsite copy.js"></script>
 </body>
 
 </html>
